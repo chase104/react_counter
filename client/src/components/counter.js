@@ -1,10 +1,15 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 
 
 const Counter = () => {
     const [count, setCount] = useState(0);
     // first select element
     // addEventListener(click, () => {})
+
+    // useEffect(() => {
+    //     // make that call to database
+    // }, [count])
+
     const handleIncrement = () => {
         console.log("running increment");
         // logic to change count
